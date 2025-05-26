@@ -1,0 +1,162 @@
+:root {
+    /* fonts */
+    --titles: Gorditas;
+    --text: Inter;
+}
+
+.bg-image {
+    width: 100vw;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.center-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertikal */
+    flex-direction: column;
+    width: 47vw;
+    margin: auto;
+    height: 28vw;
+    margin-top: 19vw;
+
+}
+
+.unnuetzer-fakt {
+    width: 50vw;
+    position: relative;
+    font-size: 4.5vw;
+    font-family: var(--titles);
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    z-index: 7;
+    margin-top: 2vw;
+}
+
+.box-fakt {
+    width: 32vw;
+    position: relative;
+    background-color: #fff;
+    border: 0.2vw solid #000;
+    box-sizing: border-box;
+    margin-top: 2vw;
+    display: inline-block;
+    padding: 0vw 1vw;
+    font-size: 1.7vw;
+    z-index: 5;
+
+}
+
+
+
+.button {
+    padding: 0.5vw 4vw;
+    background-color: #DDE4E4;
+    color: black;
+    border: 0.2vw solid black;
+    font: var(--text);
+    font-size: 1.6vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.1s;
+    z-index: 7;
+    /* sehr hoch, damit er über allem liegt */
+    margin-top: 2vw;
+
+}
+
+.button:hover {
+    background-color: black;
+    /* Dunkler beim Hover */
+    color: #DDE4E4;
+    border: 0.2vw solid #DDE4E4;
+}
+
+#smiley_rot:hover {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation: wiggle 2s linear infinite;
+    cursor: pointer;
+}
+
+#smiley_gelb:hover {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation: wiggle 2s linear infinite;
+    cursor: pointer;
+}
+
+#stern:hover {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation: wiggle 2s linear infinite;
+    cursor: pointer;
+}
+
+
+#wolken g {
+    /* position: absolute; */
+    animation-name: leftToRight;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation: rightToLeft 10s linear infinite; */
+
+}
+
+svg.first {
+    position: absolute;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translateX(-160px);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}

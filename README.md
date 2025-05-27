@@ -10,4 +10,8 @@ Dadurch das die Illustrationen selber gezeichnet sind, musste ich sie als SVG-Da
 benutzte Ressourcen und Prompts:
 
 Bei dem Coaching konnte mir Nina gut weiterhelfen, vorallem hatte ich anfangs Schwierigkeiten mit der SVG-Datei. Nina konnte mir dies gut erklären und weiterhelfen. 
+Promts: 
+
+Wie animiere ich ein Sticker, das er wigglet?
+Wie animiere ich meine Wolken im Loop?
 ![image](https://github.com/user-attachments/assets/41f145a4-553f-4826-a28c-1151fd0d07aa)
